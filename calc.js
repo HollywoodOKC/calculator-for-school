@@ -18,16 +18,21 @@ reader.question("What would you like to calculate?", function(input){
 	console.log('num1', num1);
 	console.log('num2', num2);
 
-	if (mathSymbol === "+") {
-		console.log(num1 + num2);
-	} else if (mathSymbol === "*") {
-		console.log(num1 * num2);
-	} else if (mathSymbol === "/") {
-		console.log(num1 / num2);
-	} else if (mathSymbol === "%") {
-		console.log(num1 % num2);
-	} else {
-		console.log("No Number Here!")
+	switch (mathSymbol) {
+		case "+":
+			console.log(num1 + num2);
+			break;
+		case "*":
+			console.log(num1 * num2);
+			break;
+		case "/":
+			console.log(num1 / num2);
+			break;
+		case "%":
+			console.log(num1 % num2)
+			break;
+		default:
+			console.log("No Number Here!")
 	}
 
 	// This line closes the connection to the command line interface.
