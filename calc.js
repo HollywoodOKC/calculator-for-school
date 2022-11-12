@@ -31,6 +31,9 @@ reader.question("What would you like to calculate?", function(input){
 		case "%":
 			console.log(num1 % num2);
 			break;
+		case "**":
+			console.log(num1 ** num2);
+			break;
 		default:
 			console.log("No Number Here!")
 	}
